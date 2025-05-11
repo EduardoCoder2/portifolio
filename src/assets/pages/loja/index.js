@@ -1,16 +1,21 @@
 
-let contador = 0;
-const imagens = document.querySelectorAll('.imagem');
-const totalimagens = imagens.length;
+let contador = 1;
+document.getElementById("radio1").checked = true;
 
-function mostraproximaimagem(){
-    imagens[contador].classList.remove('ativa');    
 
-    contador = (contador + 1) % totalimagens;
+setInterval(function(){
+    nextImage();
+}, 5000);
 
-    imagens[contador].classList.add('ativa')
+function nextImage(){
+ 
+    contador++;
+    if(contador > 3){
+        contador = 1;
+    }
+
+    document.getElementById("radio" + contador).checked = true;
 }
 
-setInterval(mostraproximaimagem, 6000);
 
-const elementosvg = document.getElementById('imagemsvg');
+
