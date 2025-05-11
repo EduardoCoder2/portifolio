@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="icon" href="elementos/icones/profile.svg" type="image/x-icon" />
+    <title>Agência Neofront</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="font.css" />
+  </head>
+
+  <body>
+    <!-- Cabeçalho -->
+    <header>
+      <img src="elementos/imagem/LOGO branca.svg" alt="logo" id="logo" />
+      <nav id="navbar">
+        <a href="portifolio.html" class="textonav">Portfolio</a>
+        <a href="main.html" class="textonav">Home</a>
+        <a href="" id="btn-whatsapp">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"
+            />
+          </svg>
+        </a>
+      </nav>
+    </header>
+
+    <!-- Sessão 1: Home -->
+    <section id="home">
+      
+
+      <div class="carrosel">
+        <div class="slides">
+          <div class="camada"></div>
+          <input type="radio" name="radio-btn" id="radio1" />
+          <input type="radio" name="radio-btn" id="radio2" />
+          <input type="radio" name="radio-btn" id="radio3" />
+
+          <div class="slide first">
+            <img src="elementos/imagem/amostra.png" alt="ImagemIlustrativa" />
+          </div>
+          <div class="slide">
+            <img src="elementos/imagem/amostra2.jpeg" alt="ImagemIlustrativa 2" />
+          </div>
+          <div class="slide">
+            <img src="elementos/imagem/amostra3.jpeg" alt="ImagemIlustrativa 3" />
+          </div>
+
+          <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+          </div>
+        </div>
+        <div class="navigation-manual">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+        </div>
+      </div>
+
+      <aside class="textoshome">
+        <h1 style="color: antiquewhite">
+          Transforme sua marca<br />em algo único
+        </h1>
+        <h3 style="color: rgb(129, 129, 129)">
+          Na NeoFront, desenvolvemos soluções exclusivas<br />
+          de design gráfico e web, projetadas para fazer sua<br />
+          empresa se destacar e conquistar resultados extraordinários..
+        </h3>
+        <div class="botoes">Comece seu projeto ></div>
+      </aside>
+    </section>
+
+    <!-- Sessão 2: Serviços -->
+    <section id="sessao-2">
+      <h2 class="subtitulo-serv">Nossos serviços</h2>
+      <h1 class="titulo-serv">
+        <span style="color: #e8580f">Soluções</span> criativas para seu negócio
+      </h1>
+
+      <section id="servicos">
+        <div class="conteiner-serv">
+          <img
+            style="height: 35px; width: 35px"
+            src="elementos/icones/Icone logotipo.svg"
+            alt="Icone logotipo"
+          />
+          <h3 class="titulodeserv">Logotipo</h3>
+          <p>
+            Um logotipo bem pensado cria uma conexão instantânea com seu público
+            e comunica profissionalismo. Seu negócio se destaca e ganha
+            autoridade no mercado.
+          </p>
+        </div>
+        <div class="conteiner-serv">
+          <img
+            class="icones"
+            src="elementos/icones/paleta de cores.svg"
+            alt="Icone Identidade visual"
+          />
+          <h3 class="titulodeserv">Identidade Visual</h3>
+          <p>
+            Ter uma identidade visual consistente fortalece sua marca em todos
+            os pontos de contato. Isso gera confiança e fidelidade, essencial
+            para crescer em um mercado competitivo.
+          </p>
+        </div>
+        <div class="conteiner-serv">
+          <img
+            class="icones"
+            src="elementos/icones/iconmonstr-browser-filled.svg"
+            alt="Icone Desenvolvimento web"
+          />
+          <h3 class="titulodeserv">Landing pages</h3>
+          <p>
+            Não basta uma página bonita; ela precisa converter. Nossas landing
+            pages são otimizadas para captar leads e transformar visitantes em
+            clientes com estratégias de design e usabilidade.
+          </p>
+        </div>
+        <div class="conteiner-serv">
+          <img
+            style="height: 40px; width: 40px"
+            src="elementos/icones/icone-banner.svg"
+            alt="Icone publicitarios"
+          />
+          <h3 class="titulodeserv">Banners publicitários</h3>
+          <p>
+            Em campanhas digitais ou impressas, um banner atraente é essencial
+            para capturar a atenção e comunicar sua mensagem com clareza e
+            estilo.
+          </p>
+        </div>
+      </section>
+      <div class="botoes">Solicite seu serviço ></div>
+    </section>
+
+    <!-- Sessão 3: Portfolio -->
+    <section id="sessao-3">
+      <h2 class="subtitulo-serv">Projetos recentes</h2>
+      <h1 class="titulo-serv">
+        Explore nosso <span style="color: #e8580f">portfólio</span>
+      </h1>
+      <div id="conteiner-portifolio">
+        <div class="caixaportfolio">
+          <img
+            class="imagemportifolio"
+            src="elementos/imagem/Paper Pressed Psd Logo Mockup.jpeg"
+            alt="mockap"
+          />
+          <h4>Projeto de logomarca para cliente</h4>
+          <div class="degrade"></div>
+        </div>
+        <div class="caixaportfolio">
+          <img
+            class="imagemportifolio"
+            src="elementos/imagem/Paper Pressed Psd Logo Mockup.jpeg"
+            alt="mockap"
+          />
+          <h4>Projeto de logomarca para cliente</h4>
+          <div class="degrade"></div>
+        </div>
+        <div class="caixaportfolio">
+          <img
+            class="imagemportifolio"
+            src="elementos/imagem/Paper Pressed Psd Logo Mockup.jpeg"
+            alt="mockap"
+          />
+          <h4>Projeto de logomarca para cliente</h4>
+          <div class="degrade"></div>
+        </div>
+      </div>
+      <div>
+        <div class="botoes" style="color: black">Comece seu projeto ></div>
+        <a href="portifolio.html" id="vermais">Ver mais ></a>
+      </div>
+    </section>
+
+    <!-- Sessão 4: sobre -->
+    <section id="sessao-4">
+      <div id="Texto-conteiner">
+        <h3 class="subtitulo-serv">Sobre nossa empresa</h3>
+        <h1 class="titulo-serv" style="color: #e8580f">
+          Seja bem-vindo a NeoFront, nós solucionamos seus Problemas
+        </h1>
+        <p id="sobre-txt1">
+          Na NeoFront, acreditamos que cada detalhe conta para criar uma
+          presença marcante no mercado. Especialistas em logotipos, identidade
+          visual, landing pages e banners publicitários, unimos qualidade e
+          criatividade para transformar ideias em soluções visuais que inspiram
+          confiança.
+        </p>
+        <p id="sobre-txt2">
+          Nosso foco está em atender empresas e empresários que desejam destacar
+          suas marcas de maneira única e profissional. Determinação é o que nos
+          move, e é com essa energia que trabalhamos para entregar resultados
+          que fazem a diferença.
+        </p>
+      </div>
+      <img
+        id="mesa"
+        src="elementos/imagem/illustration.svg"
+        alt="mesa com ferramentas"
+      />
+    </section>
+
+    <!-- Sessão 5: depoimentos -->
+    <!-- <section id="sessao-5">
+      <h3> Oque nossos clientes dizem:</h3>
+      <div class="avalicao">
+        <div id="perfil">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 22c-3.123 0-5.914-1.441-7.749-3.69.259-.588.783-.995 1.867-1.246 2.244-.518 4.459-.981 3.393-2.945-3.155-5.82-.899-9.119 2.489-9.119 3.322 0 5.634 3.177 2.489 9.119-1.035 1.952 1.1 2.416 3.393 2.945 1.082.25 1.61.655 1.871 1.241-1.836 2.253-4.628 3.695-7.753 3.695z"/></svg>
+          <h4>Jacinto pinto</h4>
+        </div>
+        <p class="txt-avalicao">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci iusto animi assumenda tenetur quisquam quasi"</p>
+        <div id="estrelas">
+          <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m11.322 2.923c.126-.259.39-.423.678-.423.289 0 .552.164.678.423.974 1.998 2.65 5.44 2.65 5.44s3.811.524 6.022.829c.403.055.65.396.65.747 0 .19-.072.383-.231.536-1.61 1.538-4.382 4.191-4.382 4.191s.677 3.767 1.069 5.952c.083.462-.275.882-.742.882-.122 0-.244-.029-.355-.089-1.968-1.048-5.359-2.851-5.359-2.851s-3.391 1.803-5.359 2.851c-.111.06-.234.089-.356.089-.465 0-.825-.421-.741-.882.393-2.185 1.07-5.952 1.07-5.952s-2.773-2.653-4.382-4.191c-.16-.153-.232-.346-.232-.535 0-.352.249-.694.651-.748 2.211-.305 6.021-.829 6.021-.829s1.677-3.442 2.65-5.44z" fill-rule="nonzero"/></svg>
+          <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m11.322 2.923c.126-.259.39-.423.678-.423.289 0 .552.164.678.423.974 1.998 2.65 5.44 2.65 5.44s3.811.524 6.022.829c.403.055.65.396.65.747 0 .19-.072.383-.231.536-1.61 1.538-4.382 4.191-4.382 4.191s.677 3.767 1.069 5.952c.083.462-.275.882-.742.882-.122 0-.244-.029-.355-.089-1.968-1.048-5.359-2.851-5.359-2.851s-3.391 1.803-5.359 2.851c-.111.06-.234.089-.356.089-.465 0-.825-.421-.741-.882.393-2.185 1.07-5.952 1.07-5.952s-2.773-2.653-4.382-4.191c-.16-.153-.232-.346-.232-.535 0-.352.249-.694.651-.748 2.211-.305 6.021-.829 6.021-.829s1.677-3.442 2.65-5.44z" fill-rule="nonzero"/></svg>
+          <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m11.322 2.923c.126-.259.39-.423.678-.423.289 0 .552.164.678.423.974 1.998 2.65 5.44 2.65 5.44s3.811.524 6.022.829c.403.055.65.396.65.747 0 .19-.072.383-.231.536-1.61 1.538-4.382 4.191-4.382 4.191s.677 3.767 1.069 5.952c.083.462-.275.882-.742.882-.122 0-.244-.029-.355-.089-1.968-1.048-5.359-2.851-5.359-2.851s-3.391 1.803-5.359 2.851c-.111.06-.234.089-.356.089-.465 0-.825-.421-.741-.882.393-2.185 1.07-5.952 1.07-5.952s-2.773-2.653-4.382-4.191c-.16-.153-.232-.346-.232-.535 0-.352.249-.694.651-.748 2.211-.305 6.021-.829 6.021-.829s1.677-3.442 2.65-5.44z" fill-rule="nonzero"/></svg>
+          <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m11.322 2.923c.126-.259.39-.423.678-.423.289 0 .552.164.678.423.974 1.998 2.65 5.44 2.65 5.44s3.811.524 6.022.829c.403.055.65.396.65.747 0 .19-.072.383-.231.536-1.61 1.538-4.382 4.191-4.382 4.191s.677 3.767 1.069 5.952c.083.462-.275.882-.742.882-.122 0-.244-.029-.355-.089-1.968-1.048-5.359-2.851-5.359-2.851s-3.391 1.803-5.359 2.851c-.111.06-.234.089-.356.089-.465 0-.825-.421-.741-.882.393-2.185 1.07-5.952 1.07-5.952s-2.773-2.653-4.382-4.191c-.16-.153-.232-.346-.232-.535 0-.352.249-.694.651-.748 2.211-.305 6.021-.829 6.021-.829s1.677-3.442 2.65-5.44z" fill-rule="nonzero"/></svg>
+          <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m11.322 2.923c.126-.259.39-.423.678-.423.289 0 .552.164.678.423.974 1.998 2.65 5.44 2.65 5.44s3.811.524 6.022.829c.403.055.65.396.65.747 0 .19-.072.383-.231.536-1.61 1.538-4.382 4.191-4.382 4.191s.677 3.767 1.069 5.952c.083.462-.275.882-.742.882-.122 0-.244-.029-.355-.089-1.968-1.048-5.359-2.851-5.359-2.851s-3.391 1.803-5.359 2.851c-.111.06-.234.089-.356.089-.465 0-.825-.421-.741-.882.393-2.185 1.07-5.952 1.07-5.952s-2.773-2.653-4.382-4.191c-.16-.153-.232-.346-.232-.535 0-.352.249-.694.651-.748 2.211-.305 6.021-.829 6.021-.829s1.677-3.442 2.65-5.44z" fill-rule="nonzero"/></svg>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- Rodapé -->
+    <footer>
+      <div>
+        <nav class="liks-rodape">
+          <h5>Siga-nos ></h5>
+          <div id="icones-b">
+            <img
+              class="icones"
+              src="elementos/icones/circulo-linkedin.svg"
+              alt="Linkedin"
+            />
+            <img
+              class="icones"
+              src="elementos/icones/circulo-instagram.svg"
+              alt="Instagram"
+            />
+            <img
+              class="icones"
+              src="elementos/icones/circulo-facebook.svg"
+              alt="Facebook"
+            />
+          </div>
+        </nav>
+        <nav class="liks-rodape">
+          <h5>Créditos ></h5>
+          <a
+            href="https://www.flaticon.com/br/icones-gratis/design-de-logotipo"
+            title="design de logotipo ícones"
+            >Design de logotipo ícones criados por Design Circle - Flaticon</a
+          >
+          <a
+            href="https://www.freepik.com/free-vector/people-working-together-project-office-room-isometric-colored-object-white-background-isolated-vector-illustration_40273571.htm#fromView=search&page=1&position=27&uuid=874f5283-fead-4929-9dde-6e248b4ed085&query=people+working+in+office"
+            >Image by macrovector on Freepik</a
+          >
+          <a
+            href="https://www.flaticon.com/br/icones-gratis/desenho-de-banner"
+            title="desenho de banner ícones"
+            >Desenho de banner ícones criados por Freepik - Flaticon</a
+          >
+        </nav>
+        <nav class="liks-rodape">
+          <h5>Contato ></h5>
+          <a
+            href="https://www.flaticon.com/br/icones-gratis/design-de-logotipo"
+            title="design de logotipo ícones"
+            >E-mail</a
+          >
+          <a
+            href="https://www.freepik.com/free-vector/people-working-together-project-office-room-isometric-colored-object-white-background-isolated-vector-illustration_40273571.htm#fromView=search&page=1&position=27&uuid=874f5283-fead-4929-9dde-6e248b4ed085&query=people+working+in+office"
+            >Whatsapp</a
+          >
+          <a
+            href="https://www.flaticon.com/br/icones-gratis/desenho-de-banner"
+            title="desenho de banner ícones"
+            >Telefone</a
+          >
+        </nav>
+      </div>
+      <h4>© 2024 NeoFront. Alguns direitos pertencem a terceiros.</h4>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>

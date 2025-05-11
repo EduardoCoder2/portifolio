@@ -65,7 +65,7 @@ main{
     object-fit: cover;
     width: 300px;
     height: 300px;
-    border-radius: 100%;
+    border-radius: 5%;
 }
 
 #camada1{
@@ -73,7 +73,7 @@ main{
     display: inline-block;
     padding: 5px;
     background: var(--cor6); 
-    border-radius: 50%;
+    border-radius: 10%;
 }
 
 #camada1::before{
@@ -84,17 +84,21 @@ main{
     right: -10px;
     bottom: -10px;
     border-radius: 50%;
-    background: #04d96023; 
+    background: #0460d923; 
     z-index: -1;
 }
 
 .btn-container{
     margin-top: 20px;
     display: inline-flex;
-    gap: 10px;
+    gap: 25px;
 }
 
-.btn-container button{
+.btn-container a{
+    font-size: 15pt;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     border: solid 1px var(--cor6);
     border-radius: 100%;
     height: 50px;
@@ -104,7 +108,7 @@ main{
     transition: linear 0.2s;
     cursor: pointer;
 }
-.btn-container button:hover{
+.btn-container a:hover{
     background-color: var(--cor6);
     color: #000000;
 
@@ -193,6 +197,7 @@ main{
     flex-basis: 30%;
     box-shadow: var(--shadow);
 }
+
 
 .container-projetos img{
     object-fit: cover;

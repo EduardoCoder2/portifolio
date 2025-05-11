@@ -1,0 +1,524 @@
+* {
+    margin: 0px;
+}
+
+html{
+    scroll-behavior: smooth;
+
+}
+
+body{
+    font-family: poppinsregular;
+
+}
+
+/* Cabeçalho */
+header {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 90px;
+    background-color: #262626;
+    padding: 0 50px;
+    box-shadow: 0 0 10px 0 black;
+    box-sizing: border-box;
+    z-index: 5; 
+}
+
+#navbar {   
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    color: #fafafa;
+}
+
+.textonav:hover{
+    color: #e8580f;
+
+}
+
+.textonav{
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.icones{
+    width: 30px;
+    height: 30px;
+}
+
+#btn-whatsapp:hover{
+    background-color: #e8580f;
+    color: #1c1917;
+    fill: #1c1917;
+    
+}
+
+#btn-whatsapp{
+    color: #e8580f;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px;
+    border: solid 1px #e8580f;
+    border-radius: 30px;
+    transition: all 0.3s;
+    fill: #e8580f;
+}
+
+#iconewats{
+    width: 20px;
+
+}
+
+#logo {
+    width: 180px;
+}
+
+
+/* Sessão 1 */
+#home {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  padding-top: 90px;
+}
+
+.textoshome{
+    position: absolute;
+    top: 15%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    padding: 80px 80px;
+    z-index: 3;
+
+   
+}
+
+.textoshome > :first-child{
+    font-size: 45px;
+    line-height: 50px;
+    font-family: poppinsmedium;
+    
+}
+
+
+.carrosel {
+  height: 100vh;
+  width: 100vw;
+  padding-top: 0;         /* remova isso se estava usando */
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  width: 300vw;
+  height: 100vh;
+}
+
+.slide {
+  width: 100vw;
+  height: 100vh;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  
+}
+
+.slides input {
+    display: none;
+}
+
+.navigation-manual {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: -40px;
+    z-index: 4;
+}
+
+.navigation-auto div{
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+    padding: 3px 80px;
+
+}
+
+.navigation-auto{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: calc(100vh - 40px);
+    z-index: 4;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 30px;
+}
+
+.manual-btn {
+    border: 2px solid #ffffff;
+    padding: 3px 80px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 30px;
+}
+
+.manual-btn:hover {
+    background: #ffffff;
+}
+
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background: #ffffff;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background: #ffffff;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background: #ffffff;
+}
+
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+    margin-left: -100vw;
+}
+#radio3:checked ~ .first {
+    margin-left: -200vw;
+}   
+
+
+
+
+
+
+.botoes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e8580f;
+    width: 230px;
+    height: 60px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 1s;
+    margin-top: 40px;
+    /*user-select: none;*/
+}
+
+.botoes:hover{
+    transform: scale(110%);
+    box-shadow: 0px 0px 10px #e8580f;
+}
+
+.camada{
+    position: absolute;
+    background: linear-gradient(to right,#0a0a0af6 10%,#0a0a0aaf 50% ,#00000000 100%);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+
+
+/* Sessão 2 */
+#sessao-2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 80px;
+    background-color: #1c1917;
+    /* Removido o `height` fixo */
+}
+
+#servicos {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Alinhamento vertical */
+    width: 100%; /* Ajusta o tamanho do contêiner pai */
+    margin: 0 auto; /* Centraliza o contêiner pai */
+    padding: 0 20px; /* Adiciona espaçamento interno */
+    box-sizing: border-box;
+}
+
+.conteiner-serv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: 280px;
+    width: 240px;
+    background-color: #292524;
+    border: solid 2px #e8580f;
+    border-radius: 20px;
+    color: #fafafa;
+    box-sizing: border-box;
+    font-size: 10pt;
+}
+
+.subtitulo-serv {
+    color: rgb(129, 129, 129);
+    font-size: 12pt;
+}
+
+.titulo-serv {
+    color: #fafafa;
+    font-size: 20pt;
+    margin-bottom: 40px;
+    font-family: poppinsmedium;
+}
+
+.titulodeserv {
+    color: #e8580f;
+    margin: 10px 0;
+}
+
+/* .botoes {
+    margin-top: 30px;
+    color: #e8580f;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+} */
+
+ /* Sessão 3 */
+#sessao-3{
+    padding: 0 80px;
+    padding-bottom: 80px;
+    background-color: #1c1917;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    color: white;
+}
+
+#vermais{
+    color: #fafafa;
+    text-decoration: none;
+    margin-top: 40px;
+    transition: 0.5s;
+}
+
+#vermais:hover{
+ color: #e8580f;
+}
+
+.caixaportfolio{
+    position: relative;
+     display: flex;
+    justify-content: center;
+    align-items: end;
+    overflow: hidden;
+    border-radius: 20px;
+   
+}
+
+.caixaportfolio::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.7));
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+
+.caixaportfolio:hover::before,
+.caixaportfolio:hover h4 {
+  opacity: 1;
+}
+
+.caixaportfolio  h4{
+    position: absolute;
+    z-index: 2;
+    padding-bottom: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.imagemportifolio{
+   width: 100%;
+  height: auto;
+}
+
+#conteiner-portifolio{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+#sessao-3 > :last-child{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+ /* Sessão 4 */
+#sessao-4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fafafa;
+    background-color: #1c1917;
+    padding-bottom: 80px;
+}
+
+#Texto-conteiner{
+    margin-right: 40px;
+    width: 500px;
+    height: auto;
+    overflow-wrap: break-word;
+
+}
+
+ #mesa{
+    height: 500px;
+    border-radius: 40px;
+    
+ }
+
+ #sobre-txt1{
+    display: flex;
+    margin-bottom: 20px;
+ }
+
+ #sobre-txt2{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.container-qualidades{
+    display: flex;
+    align-items: center;
+    font-family: poppinsregular;
+    gap: 10px;
+}
+
+.dot-icon{
+    height: 30px;
+    width: 30px;
+   
+}
+ /* Sessão 5 */
+
+#sessao-5{
+    padding: 50px 50px;
+    background-color: #1c1917;
+    height: 600px;
+    color: #ffffff;
+    fill: #fafafa;
+}
+
+.avalicao{
+    max-width: 150px;
+    padding: 50px;
+    background-color: #262626;
+    border-radius: 20px;
+
+
+}
+
+#perfil{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+#perfil svg{
+    height: 35px;
+    width: 35px;
+
+}
+ 
+ #estrelas{
+    display: flex;
+   
+ }
+
+ #estrelas svg{
+   height: 24px;
+   width: 24px;
+   
+ }
+
+ /* Roda pé */
+
+ footer{
+    background-color: #262626;
+    color: #ffffff;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20PX;
+ }
+ 
+ .liks-rodape{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+ }
+
+footer > div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly ;
+}
+
+.liks-rodape > a, img {
+    font-size: 10pt;
+    color: gray;
+    text-decoration: none;
+    transition: all 0.5s;
+    fill: #e8580f;
+ }
+
+
+
+.liks-rodape > a:hover, img {
+    color: #fafafa;
+}
+
+ footer > h4{
+    align-self: center;
+    font-family: poppinsregular;
+    font-weight: normal;
+    font-size: 10pt;
+ }
+
+
